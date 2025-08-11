@@ -698,6 +698,11 @@ require('lazy').setup({
             },
           },
         },
+        gopls = {
+          cmd = { 'gopls' },
+          filetypes = { 'go', 'gomod', 'gowork', 'gotmpl' },
+          root_dir = '../lsp/gopls.lua',
+        },
       }
 
       -- Ensure the servers and tools above are installed
